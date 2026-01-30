@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Light background for better contrast */
+    line-height: 1.6;
+}
+
+/*navbar*/
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #1A2A7A;
+            
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+       
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title h1 {
+             font-size: 30px;
+            line-height: 1.5;
+            margin: 0 0 5px 0;
+            color:gold;
+            font-family: 'khmer muol';
+        }
+
+        .title h2 {
+           font-size: 16px;
+            line-height: 1.4;
+            margin: 0;
+            color:white;
+        }
+
+        /* Navbar */
+        .nav_links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav_links li a {
+            color: #edf0f1af;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-family: 'khmer muol';
+        }
+
+        .nav_links li a:hover {
+            background-color: gold;
+            color: #1A2A7A;
+             transition: transform 0.3s ease, box-shadow 0.3s ease;
+             box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* shadow effect */
+        }
+
+/* 3. Hero Section */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 60px;
+    
+    margin-bottom: 10px;
+    text-align: center;
+      color: gold; /* Darker gold for readability */
+    text-shadow: 0 0 5px black,0 0 1px ,0 0 20px black,0 0 40px black;
+    font-family: 'khmer muol';
+}
+
+.hero p {
+    margin-bottom: 20px;
+     color: gold; /* Darker gold for readability */
+    text-shadow: 0 0 5px black,0 0 1px ,0 0 20px black,0 0 40px black;
+    font-family: 'khmer muol';
+}
+
+.hero button {
+    padding: 10px 25px;
+    background-color: gold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: black;
+    border: 1px solid #b8860b;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: white;
+}
+
+/* 4. Products Section */
+.product {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product h1 {
+    color: #ccac00;
+    margin-bottom: 20px;
+}
+
+/* This fixes the mobile overlap */
+.product-container, .product-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows cards to drop to the next row */
+    padding: 20px 0;
+}
+
+
+
+.product-card {
+    width: 160px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 80px;
+    height: auto;
+    margin: 15px 0;
+    transition: transform 0.3s;
+}
+
+/* Reduced scale so it doesn't break the layout */
+.product-card img:hover {
+    transform: scale(1.5); 
+}
+
+.product-card h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.product-card p {
+    font-weight: bold;
+    color: #333;
+}
+
+.product-card button {
+    margin-top: auto;
+    padding: 10px;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 5. Footer */
+footer {
+    background-color: #0a4d62;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* 6. Responsive Media Query */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .product-container {
+        gap: 10px;
+    }
+}
+.fa-down-long{
+    font-size: 3rem;
+    color:white;
+}
