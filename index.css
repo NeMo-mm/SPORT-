@@ -38,7 +38,7 @@ body {
         }
 
         .title h1 {
-             font-size: 30px;
+             font-size: 20px;
             line-height: 1.5;
             margin: 0 0 5px 0;
             color:gold;
@@ -223,3 +223,4 @@ footer {
     font-size: 3rem;
     color:white;
 }
+
