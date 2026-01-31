@@ -16,7 +16,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 30px;
+            padding: 10px 15px;
             background-color: #1A2A7A;
             
         }
@@ -223,4 +223,5 @@ footer {
     font-size: 3rem;
     color:white;
 }
+
 
