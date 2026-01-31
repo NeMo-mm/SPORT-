@@ -18,6 +18,11 @@ body {
             align-items: center;
             padding: 10px 15px;
             background-color: #1A2A7A;
+            position:-webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
             
         }
 
@@ -38,7 +43,7 @@ body {
         }
 
         .title h1 {
-             font-size: 20px;
+             font-size: 15px;
             line-height: 1.5;
             margin: 0 0 5px 0;
             color:gold;
@@ -77,10 +82,10 @@ body {
 
 /* 3. Hero Section */
 .hero {
-    padding: 60px 20px;
+    padding: 60px 40px;
     text-align: center;
     background-color: #fff;
-    background-image: url(background.jpg);
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/2304c7160158725.63ae017cc330a.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -221,7 +226,5 @@ footer {
 }
 .fa-down-long{
     font-size: 3rem;
-    color:white;
+    color:gold;
 }
-
-
